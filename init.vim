@@ -25,7 +25,7 @@ syntax on                   " syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pluggins install
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin('./plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " Theme
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
