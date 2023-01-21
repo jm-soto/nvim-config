@@ -18,6 +18,8 @@ set mouse=v                 " middle-click paste with
 set clipboard=unnamedplus   " using system clipboard
 set ttyfast                 " Speed up scrolling in Vim
 set updatetime=750          " 4000 (4 seconds) by default
+set noshowmode              
+set hlsearch                " highlight matches
 filetype plugin indent on   " allow auto-indenting depending on file type
 filetype plugin on
 syntax on                   " syntax highlighting
