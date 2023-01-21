@@ -48,6 +48,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Code
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'        " Insert/delete brackets in pair
+Plug 'tpope/vim-surround'          " Surroundings with brackets, etc
 
 call plug#end()
 
