@@ -1,4 +1,4 @@
-let mapleader = ","         " leader key
+let mapleader = "\<Space>"         " leader key
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
@@ -33,8 +33,10 @@ call plug#begin('~/.config/nvim/plugged')
 " Theme
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'ryanoasis/vim-devicons'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+
+" Status Bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes' 
 
 " Git
 Plug 'Xuyuanp/nerdtree-git-plugin' " NERDTree showing git status flags
@@ -43,13 +45,18 @@ Plug 'airblade/vim-gitgutter'      " shows a git diff in the sign column
 
 " IDE
 Plug 'preservim/nerdtree'
+" Plug 'preservim/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Yggdroot/indentLine'         " vertical lines at each indentation level
 Plug 'preservim/nerdcommenter'     " Comment functions so powerful
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'junegunn/fzf'                " general-purpose command-line fuzzy finder
+Plug 'easymotion/vim-easymotion'   " vim motion on speed!
 
 " Code
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Code
 Plug 'jiangmiao/auto-pairs'        " Insert/delete brackets in pair
 Plug 'tpope/vim-surround'          " Surroundings with brackets, etc
 
@@ -61,9 +68,13 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug 'vim-airline/vim-airline'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='bubblegum'
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#branch#enabled = 1
+
+" Themes: https://github.com/vim-airline/vim-airline/wiki/Screenshots
+" let g:airline_theme='light'
+let g:airline_theme='deus'
+" let g:airline_theme='bubblegum'
 
 
 " Plug 'folke/tokyonight.nvim'
@@ -111,10 +122,13 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 
+" Plug 'easymotion/vim-easymotion'
+map <Leader> <Plug>(easymotion-prefix)
+
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 set nobackup         " Some servers have issues with backup files, see #649.
 set nowritebackup
-set updatetime=300   " default is 4000 ms = 4s
+set updatetime=100   " default is 4000 ms = 4s
 set signcolumn=yes   " Always show the signcolumn
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -185,18 +199,18 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-
-" Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
-" Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
-
-" Run the Code Lens action on the current line.
-nmap <leader>cl  <Plug>(coc-codelens-action)
+" " Applying codeAction to the selected region.
+" " Example: `<leader>aap` for current paragraph
+" xmap <leader>a  <Plug>(coc-codeaction-selected)
+" nmap <leader>a  <Plug>(coc-codeaction-selected)
+"
+" " Remap keys for applying codeAction to the current buffer.
+" nmap <leader>ac  <Plug>(coc-codeaction)
+" " Apply AutoFix to problem on the current line.
+" nmap <leader>qf  <Plug>(coc-fix-current)
+"
+" " Run the Code Lens action on the current line.
+" nmap <leader>cl  <Plug>(coc-codelens-action)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
@@ -238,23 +252,23 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-" Mappings for CoCList
-" Show all diagnostics.
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
-" Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
-" Show commands.
-nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
-" Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
-" Do default action for next item.
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
-" Do default action for previous item.
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list.
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+" " Mappings for CoCList
+" " Show all diagnostics.
+" nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+" " Manage extensions.
+" nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" " Show commands.
+" nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+" " Find symbol of current document.
+" nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+" " Search workspace symbols.
+" nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+" " Do default action for next item.
+" nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+" " Do default action for previous item.
+" nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+" " Resume latest coc list.
+" nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " if hidden is not set, TextEdit might fail
 set hidden
