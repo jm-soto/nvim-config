@@ -1,17 +1,4 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plug 'vim-airline/vim-airline'
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#branch#enabled = 1
-
-" Themes: https://github.com/vim-airline/vim-airline/wiki/Screenshots
-" let g:airline_theme='light'
-let g:airline_theme='deus'
-" let g:airline_theme='bubblegum'
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug 'folke/tokyonight.nvim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:tokyonight_style = "day"
@@ -29,17 +16,12 @@ colorscheme tokyonight-moon
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plug 'airblade/vim-gitgutter'
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set updatetime=100
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeHighlightFolders = 1
 let g:NERDTreeHighlightFoldersFullName = 1
+let g:NERDTreeGitStatusConcealBrackets = 1 " default: 0
 " let g:NERDTreeGitStatusShowClean = 1
 
 
@@ -57,6 +39,24 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plug 'vim-airline/vim-airline'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#branch#enabled = 1
+
+" Themes: https://github.com/vim-airline/vim-airline/wiki/Screenshots
+" let g:airline_theme='light'
+let g:airline_theme='deus'
+" let g:airline_theme='bubblegum'
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plug 'airblade/vim-gitgutter'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set updatetime=100
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
