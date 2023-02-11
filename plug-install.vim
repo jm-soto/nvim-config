@@ -36,4 +36,7 @@ Plug 'tpope/vim-surround'  |       " Surroundings with brackets, etc
 Plug 'Yggdroot/indentLine'         " vertical lines at each indentation level
 Plug 'preservim/nerdcommenter'     " Comment functions so powerful
 
+" Github Copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
