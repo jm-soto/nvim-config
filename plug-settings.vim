@@ -74,6 +74,8 @@ let g:copilot_filetypes = {
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:coc_start_at_startup = v:false
+
 set nobackup         " Some servers have issues with backup files, see #649.
 set nowritebackup
 set updatetime=100   " default is 4000 ms = 4s
