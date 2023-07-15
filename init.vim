@@ -10,7 +10,7 @@ set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line
 set number                  " add line numbers
-" set relativenumber          " line number relative to the cursor"
+" set relativenumber        " line number relative to the cursor
 set wildmode=longest,list   " get bash-like tab completions
 set cursorline              " highlight current cursorline
 set mouse=a                 " enable mouse click
@@ -23,7 +23,7 @@ set hlsearch                " highlight matches
 filetype plugin indent on   " allow auto-indenting depending on file type
 filetype plugin on
 syntax on                   " syntax highlighting
-" set cc=80                   " set an 80 column border for good coding style
+" set cc=80                 " set an 80 column border for good coding style
 
 source ~/.config/nvim/plug-install.vim
 source ~/.config/nvim/plug-settings.vim
