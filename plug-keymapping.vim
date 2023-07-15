@@ -7,6 +7,12 @@ map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plug 'nvim-tree/nvim-tree.lua'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-n> :NvimTreeOpen<CR>
+nnoremap <C-c> :NvimTreeClose<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug 'airblade/vim-gitgutter'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap ghn <Plug>(GitGutterNextHunk)

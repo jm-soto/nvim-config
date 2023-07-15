@@ -14,7 +14,7 @@ set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
 set cursorline              " highlight current cursorline
 set mouse=a                 " enable mouse click
-set mouse=v                 " middle-click paste with 
+" set mouse=v               " middle-click paste with
 set clipboard=unnamedplus   " using system clipboard
 set ttyfast                 " Speed up scrolling in Vim
 set updatetime=750          " 4000 (4 seconds) by default
