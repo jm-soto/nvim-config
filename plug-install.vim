@@ -6,11 +6,9 @@ call plug#begin('~/.config/nvim/plugged')
 " IDE Theme
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
-" Directory Tree
-Plug 'preservim/nerdtree' |
-    \ Plug 'Xuyuanp/nerdtree-git-plugin' | 
-    \ Plug 'ryanoasis/vim-devicons' |
-    \ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" nvim-tree
+Plug 'nvim-tree/nvim-web-devicons' " optional
+Plug 'nvim-tree/nvim-tree.lua'
 
 " Status Bar
 Plug 'vim-airline/vim-airline'
