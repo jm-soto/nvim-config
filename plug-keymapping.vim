@@ -6,14 +6,11 @@ nnoremap <Leader>< 10<C-w><
 map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plug 'preservim/nerdtree'
+" Plug 'nvim-tree/nvim-tree.lua'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-" nnoremap <C-f> :NERDTreeFind<CR>
-
+nnoremap <C-n> :NvimTreeOpen<CR>
+nnoremap <C-c> :NvimTreeClose<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug 'airblade/vim-gitgutter'
