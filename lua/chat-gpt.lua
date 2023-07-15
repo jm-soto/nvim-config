@@ -4,10 +4,7 @@ return require('packer').startup(function(use)
     use({
       "jackMort/ChatGPT.nvim",
         config = function()
-          require("chatgpt").setup({
-               welcome_message = "Hello, I'm ChatGPT. Ask me anything!", 
-            },
-          })
+          require("chatgpt").setup()
         end,
         requires = {
           "MunifTanjim/nui.nvim",
