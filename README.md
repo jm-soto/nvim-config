@@ -11,6 +11,6 @@ Go to the `~/.config/nvim` directory (make sure this folder doesn't have configu
 ```
 git clone --depth=1 https://github.com/Tekiroz/nvim-config.git .
 ```
-After that, open vim and run `:PlugInstall` command to install pluggins managed by vim-plug. Pluggins will be installed into `~/.config/nvim/plugged` directory. 
-Finally run `:PackerInstall` to install the ChatGPT plugin with packer.
+After that, open nvim and run `:PlugInstall` command to install pluggins managed by vim-plug. Pluggins will be installed into `~/.config/nvim/plugged` directory. 
+Finally run `:PackerInstall` to install the ChatGPT plugin with packep.
 
