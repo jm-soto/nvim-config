@@ -30,3 +30,4 @@ source ~/.config/nvim/plug-settings.vim
 source ~/.config/nvim/plug-keymapping.vim
 
 lua require('chatgpt').setup()
+lua require("nvimtree")
