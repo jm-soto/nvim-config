@@ -25,7 +25,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } |
 Plug 'easymotion/vim-easymotion'   " vim motion on speed!
 
 " Code Syntax
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Code
 Plug 'jiangmiao/auto-pairs'        " Insert/delete brackets in pair
