@@ -6,7 +6,8 @@ call plug#begin('~/.config/nvim/plugged')
 if !exists ('g:vscode')
 
     " IDE Theme
-    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+    "Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+    Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
     
     " nvim-tree
     Plug 'nvim-tree/nvim-web-devicons' " optional

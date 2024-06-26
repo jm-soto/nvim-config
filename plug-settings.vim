@@ -13,9 +13,15 @@ if !exists ('g:vscode')
     " colorscheme tokyonight-day
     " colorscheme tokyonight-night
     " colorscheme tokyonight-storm
-    colorscheme tokyonight-moon
-    
-    
+    " colorscheme tokyonight-moon
+
+
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Plug 'catpuccin/nvim'
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+
+
     """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     " Plug 'Xuyuanp/nerdtree-git-plugin'
     """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
