@@ -6,7 +6,8 @@ call plug#begin('~/.config/nvim/plugged')
 if !exists ('g:vscode')
 
     " IDE Theme
-    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+    "Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+    Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
     
     " nvim-tree
     Plug 'nvim-tree/nvim-web-devicons' " optional
@@ -25,7 +26,7 @@ if !exists ('g:vscode')
           \ Plug 'junegunn/fzf.vim'
     
     " Code Syntax
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " Markdown preview
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }

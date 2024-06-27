@@ -20,7 +20,7 @@ else
     set cursorline              " highlight current cursorline
     set mouse=a                 " enable mouse click
     " set mouse=v               " middle-click paste with
-    set clipboard=unnamedplus   " using system clipboard
+    set clipboard+=unnamedplus   " using system clipboard
     set ttyfast                 " Speed up scrolling in Vim
     set updatetime=750          " 4000 (4 seconds) by default
     set noshowmode              
@@ -37,7 +37,6 @@ source ~/.config/nvim/plug-settings.vim
 source ~/.config/nvim/plug-keymapping.vim
 
 if !exists('g:vscode')
-    lua require('chat-gpt')
+    " lua require('chat-gpt')
     lua require("nvimtree")
 endif
-
